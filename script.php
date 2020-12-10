@@ -12,24 +12,24 @@ $idade = $_POST['idade'];
 
 // Validação do campo nome
 if (empty($nome)) {
-	$_SESSION['mensagem-de-erro'] = "O nome não pode ser vazio";
-	return;
+	$_SESSION['mensagem-de-erro'] = "O nome não pode ser vazio, preencha-o novamente";
+	header('location: index.php');
 }
 
 if (strlen($nome < 3)) {
-	$_SESSION['mensagem-de-erro'] = "O nome deve conter mais de 3 caracteres";
-	return;
+	$_SESSION['mensagem-de-erro'] = "O nome deve conter mais de 3 caracteres, preencha-o novamente";
+	header('location: index.php');
 }
 
 if (strlen($nome) > 40) {
-	$_SESSION['mensagem-de-erro'] = "O nome é muito extenso";
-	return;
+	$_SESSION['mensagem-de-erro'] = "O nome é muito extenso, preencha-o novamente";
+	header('location: index.php');
 }
 
 // Validação do campo idade
 if (!is_numeric($idade)) {
-	$_SESSION['mensagem-de-erro'] = "Informe um número para a idade";
-	return;
+	$_SESSION['mensagem-de-erro'] = "Informe um número para a idade, preencha-o novamente";
+	header('location: index.php');
 }
 
 if ($idade >= 6 && $idade <= 12) {
