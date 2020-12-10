@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 $categorias = [];
 $categorias[] = 'infantil';
 $categorias[] = 'adolescente';
@@ -9,23 +12,23 @@ $idade = $_POST['idade'];
 
 // Validação do campo nome
 if (empty($nome)) {
-	echo "O nome não pode ser vazio";
+	$_SESSION['mensagem-de-erro'] = "O nome não pode ser vazio";
 	return;
 }
 
 if (strlen($nome < 3)) {
-	echo "O nome deve conter mais de 3 caracteres";
+	$_SESSION['mensagem-de-erro'] = "O nome deve conter mais de 3 caracteres";
 	return;
 }
 
 if (strlen($nome) > 40) {
-	echo "O nome é muito extenso";
+	$_SESSION['mensagem-de-erro'] = "O nome é muito extenso";
 	return;
 }
 
 // Validação do campo idade
 if (!is_numeric($idade)) {
-	echo "Informe um número para a idade";
+	$_SESSION['mensagem-de-erro'] = "Informe um número para a idade";
 	return;
 }
 
