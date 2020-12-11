@@ -36,6 +36,12 @@ Esse projeto faz parte do Bootcamp SPTech Desenvolvimento Back-end da [Digital I
 
 Nesse Bootcamp será aprendido a desenvolver plataformas web utilizando a linguagem PHP e seus principais frameworks e bibliotecas disponíveis.
 
+## :elephant: Criando um projeto simples com PHP
+
+Criação de um projeto em PHP para uma competição de natação, o sistema deverá permitir a inserção de competidores com seu nome e idade, e o sistema deverá identificar em qual categoria o nadador irá competir, por exemplo, 6 a 12 anos categoria Infantil, de 13 a 18 catedoria Adolescente, acima de 18 categoria Adulto.
+
+O sistema deverá retornar a categoria para cada nadador que for cadastrado.
+
 ## :seedling: Requisitos Mínimos
 
 Servidor web - [Apache](https://www.apache.org/) ou [Ngnix](https://www.nginx.com/) ou outro que execute PHP;
