@@ -6,7 +6,7 @@ function validaNome(string $nome) : bool {
     return false;
   }
 
-  if (strlen($nome < 3)) {
+  if (strlen($nome) < 3) {
     setarMensagemErro("O nome deve conter mais de 3 caracteres, preencha-o novamente");
     return false;
   }
