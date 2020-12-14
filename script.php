@@ -1,7 +1,7 @@
 <?php
 
 include "servicos/servicoMensagemSessao.php";
-include "servicos/servicoValidacao.php"
+include "servicos/servicoValidacao.php";
 include "servicos/servicoCategoriaCompetidor.php";
 
 $nome = $_POST['nome'];
