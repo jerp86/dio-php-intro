@@ -1,6 +1,6 @@
 <?php
 
-function defineCategoriaCompetidor(string $nome, $string $idade) : ?string {
+function defineCategoriaCompetidor(string $nome, string $idade) : ?string {
   $categorias = [];
   $categorias[] = 'infantil';
   $categorias[] = 'adolescente';
